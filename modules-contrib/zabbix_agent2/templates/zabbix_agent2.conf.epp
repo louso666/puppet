@@ -1,0 +1,9 @@
+# Managed by Puppet.
+
+<% $zabbix_agent2::config.map |$k,$v| { -%>
+<%   if $v =~ Tuple { -%>
+<%=    $k %>=<%= $v.join(',') %>
+<%   } else { -%>
+<%=    $k %>=<%= $v %>
+<%   } -%>
+<% } -%>

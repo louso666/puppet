@@ -1,0 +1,15 @@
+---
+chrony::config: '/etc/chrony.conf'
+chrony::package: 'chrony'
+chrony::service: 'chronyd'
+chrony::pools:
+  - hostname: '2.opensuse.pool.ntp.org'
+    iburst: true
+chrony::driftfile: '/var/lib/chrony/drift'
+chrony::makestep:
+  - 1.0
+  - 3
+chrony::rtcsync: true
+chrony::logdir: '/var/log/chrony'
+chrony::keyfile: '/etc/chrony.keys'
+chrony::group: 'chrony'

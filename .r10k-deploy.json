@@ -1,0 +1,84 @@
+{
+  "name": "main",
+  "signature": "3d75483f0542060dd9f5195832c6b1aa1c10aaca",
+  "started_at": "2025-01-06 21:52:49 +0300",
+  "finished_at": "2025-01-06 21:52:50 +0300",
+  "deploy_success": true,
+  "module_deploys": [
+    {
+      "name": "puppetdb",
+      "version": "8.1.0",
+      "sha": null
+    },
+    {
+      "name": "stdlib",
+      "version": "9.7.0",
+      "sha": null
+    },
+    {
+      "name": "concat",
+      "version": "9.1.0",
+      "sha": null
+    },
+    {
+      "name": "inifile",
+      "version": "6.2.0",
+      "sha": null
+    },
+    {
+      "name": "postgresql",
+      "version": "10.4.0",
+      "sha": null
+    },
+    {
+      "name": "puppet_agent",
+      "version": "4.21.0",
+      "sha": null
+    },
+    {
+      "name": "puppetserver_gem",
+      "version": "1.1.1",
+      "sha": null
+    },
+    {
+      "name": "apt",
+      "version": "10.0.0",
+      "sha": null
+    },
+    {
+      "name": "nginx",
+      "version": "6.0.1",
+      "sha": null
+    },
+    {
+      "name": "zabbix",
+      "version": "10.0.0",
+      "sha": null
+    },
+    {
+      "name": "zabbix_agent2",
+      "version": "0.1.1",
+      "sha": null
+    },
+    {
+      "name": "firewall",
+      "version": "8.1.3",
+      "sha": null
+    },
+    {
+      "name": "chrony",
+      "version": "0.5.0",
+      "sha": null
+    },
+    {
+      "name": "docker",
+      "version": "10.1.0",
+      "sha": null
+    },
+    {
+      "name": "timezone",
+      "version": "7.0.0",
+      "sha": null
+    }
+  ]
+}

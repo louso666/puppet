@@ -1,0 +1,27 @@
+---
+zabbix_agent2::config:
+  PidFile: '/run/zabbix/zabbix_agent2.pid'
+  LogFile: '/var/log/zabbix/zabbix_agent2.log'
+  LogFileSize: 0
+  Server: '127.0.0.1'
+  ServerActive: '127.0.0.1'
+  Hostname: "%{::hostname}"
+  Include: '/etc/zabbix/zabbix_agent2.d/*.conf'
+  ControlSocket: '/tmp/agent.sock'
+zabbix_agent2::config_file: '/etc/zabbix/zabbix_agent2.conf'
+zabbix_agent2::config_file_ensure: present
+zabbix_agent2::config_file_mode: '0644'
+zabbix_agent2::config_epp: ~
+zabbix_agent2::config_template: ~
+zabbix_agent2::package_ensure: present
+zabbix_agent2::package_manage: true
+zabbix_agent2::package_name: [ 'zabbix-agent2' ]
+zabbix_agent2::repo_manage: true
+zabbix_agent2::service_enable: true
+zabbix_agent2::service_ensure: 'running'
+zabbix_agent2::service_manage: true
+zabbix_agent2::service_name: 'zabbix-agent2'
+zabbix_agent2::service_provider: ~
+zabbix_agent2::service_hasstatus: true
+zabbix_agent2::service_hasrestart: true
+zabbix_agent2::zabbix_version: '5.0'
